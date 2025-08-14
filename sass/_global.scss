@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $fuente-principal;
+  margin: 0;
+  padding: 0;
+  background-color: $color-fondo;
+  color: $color-texto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-fondo;
+  color: $color-texto;
+
+  h2,
+  p {
+    @include animacion-fade(1.5s);
+  }
+}
